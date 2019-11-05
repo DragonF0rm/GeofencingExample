@@ -178,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
                 )
                 .setExpirationDuration(ttl) //in ms or -1 for not expiring geofence
                 .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER |
+                        Geofence.GEOFENCE_TRANSITION_DWELL |
                         Geofence.GEOFENCE_TRANSITION_EXIT)
                 .build());
         String msg = "Added geofences with key " + key;
@@ -209,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
 
             // Test that the reported transition was of interest.
             if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_ENTER ||
+                    geofenceTransition == Geofence.GEOFENCE_TRANSITION_DWELL ||
                     geofenceTransition == Geofence.GEOFENCE_TRANSITION_EXIT) {
 
                 // Get the geofences that were triggered. A single event can trigger
