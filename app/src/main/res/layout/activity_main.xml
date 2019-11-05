@@ -59,10 +59,19 @@
         android:layout_below="@id/ttl"/>
 
     <Button
-        android:id="@+id/deleteBtn"
+        android:id="@+id/startBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete geofences"
-        android:layout_below="@+id/addBtn"/>
+        android:text="Start monitoring"
+        android:layout_below="@id/addBtn"
+        android:background="#00FF00"/>
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop monitoring"
+        android:layout_below="@+id/startBtn"
+        android:background="#FF0000"/>
 
 </RelativeLayout>
