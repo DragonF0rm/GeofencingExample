@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER |
                         Geofence.GEOFENCE_TRANSITION_EXIT)
                 .build());
-        String msg = "Added geofences with key";
+        String msg = "Added geofences with key " + key;
         Toast.makeText(
                 getApplicationContext(),
                 msg,
